@@ -18,10 +18,10 @@
     </article>
     <div style="font-size: 18px;">
         <b>Abstract:</b>
-        Analog communications are still widely used in various fields today, such as radio, television, walkie-talkies and etc.. This is due to analog communication being cheap, having low energy consumption, no cliff effect, and importantly, a huge user base due to its long history. Despite this, analog signals are still susceptible to noise, interference, and other factors that affect their reception quality, making it difficult to achieve high-fidelity signal transmission. Therefore, we attempt to add a small amount of digital communication to carry semantic representations, aiming to restore analog signals and achieve high-fidelity recovery. Taking traditional FM communication as an example, we introduce digital semantic information and construct an analog signal recovery model named DeepFM to improve the quality of analog communication while ensuring compatibility. Finally, through extensive experiments, we find that high-fidelity recovery can be achieved even when the semantic representation is carried on a 0.5 Kbps digital channel.
+        Frequency modulation (FM) is widely used in broadcasting and IoT audio for its simplicity and low cost, yet remains susceptible to noise. We present DeepFM, a hybrid digital–analog system that supplements FM with a low-rate semantic side channel. A neural encoder compresses audio into quantized features sent alongside the FM signal. A channel-aware decoder fuses semantic bits, noisy analog input, and RSSI to restore high-fidelity audio. Evaluated on our SFR dataset at 0.5–12 kbps, DeepFM outperforms leading neural codecs in mainstream speech-quality metrics, particularly at low–medium bitrates (0.5–3 kbps). DeepFM demonstrates robust, real-time performance compatible with legacy FM infrastructure.
       <p></p>
       </div>
-    <img src="images\model structure.jpg" style="width: 80%; height: auto;display: block; margin-left: auto; margin-right: auto;" alt="model structure">
+<!--     <img src="images\model structure.jpg" style="width: 80%; height: auto;display: block; margin-left: auto; margin-right: auto;" alt="model structure"> -->
     <br><br>
     <div>
         <a name="Demos"><h2>FM Received Audio with Extremely Poor Quality</h2></a>
